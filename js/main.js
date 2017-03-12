@@ -1,0 +1,30 @@
+$(function(){
+    new Vue({
+        el:'#stu',
+        data:{
+            newPerson:{
+              name:'',
+              age:'',
+              sex:'Male'
+            },
+            people:[{
+              name:'Jack',
+              age:18,
+              sex:'Male'
+            }]
+        },
+        methods:{
+          createPerson:function(){
+            this.people.push(this.newPerson);
+            this.newPerson={
+              name:'',
+              age:'',
+              sex:'Male'
+            };
+          },
+          deletePerson:function(index){
+            this.people.splice(index,1);
+          }
+        }
+    });
+});

@@ -1,0 +1,21 @@
+label {
+    width: 60px;
+    display: inline-block;
+}
+.Add {
+    width: 500px;
+    margin: 0 auto;
+}
+fieldset div{
+  margin: 30px;
+}
+table{
+  width: 100%;
+}
+table,td,tr{
+  border: 1px solid;
+}
+td button{
+  display: block;
+  margin: 0 auto;
+}
